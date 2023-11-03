@@ -54,4 +54,15 @@ form input{
   font-size: large;
   border-radius: 5px;
   margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.disabled{
+  padding:10px 20px 10px 20px;
+  background-color: lightgray;
+  border: 1px solid lightcyan;
+  font-size: large;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  cursor: not-allowed;
 }
