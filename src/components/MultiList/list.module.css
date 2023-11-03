@@ -1,0 +1,125 @@
+.container{
+    background-color: rgba(251, 246, 246, 0.794);
+    width: 45rem;
+    min-height: 1.25rem;
+    border: 2px solid grey;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0.5em;
+    outline: none;
+}
+
+.selectedOption{
+    background-color: skyblue; 
+    border: 1px solid gainsboro;
+    padding: 0 1.5rem;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.btnClose{
+    background: none;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+    position: absolute;
+    top: auto;
+    right:0;
+    
+}
+.btnClose:hover{
+    color: grey;
+}
+
+.btnArrowDown{
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    padding: 4px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 1.5rem;
+    right: 0.6rem;
+    background-color: transparent;
+}
+.btnArrowDown:hover{
+    border: solid grey;
+    border-width: 0 3px 3px 0;
+}
+
+.btnArrowUp{
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    padding: 4px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    transform: rotate(-135deg);
+    position: absolute;
+    top: 1.5rem;
+    right: 0.6rem;
+    background-color: transparent;
+}
+.btnArrowUp:hover{
+    border: solid grey;
+    border-width: 0 3px 3px 0;
+}
+
+.options{
+    width: 97%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2px;
+    align-items: center;
+}
+
+.listItems{
+    position: absolute;
+    list-style: none;
+    margin: 0;
+    padding: 2px;
+    width: 100%;
+    display: none;
+    border: 2px solid grey;
+    border-radius: 5px;
+    max-height: 250px;
+    overflow-y: auto;
+    left: 0;
+    top: calc(100% + 0.1rem);
+}
+
+.listItems.show{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.listItems li{
+    border: 1px solid grey;
+    padding: 5px 3px;
+    background-color: ghostwhite;
+    font-size: large;
+    font-weight: 400;
+    font-style: italic;
+    cursor: pointer;
+}
+.listItems li:hover{
+    background-color:lightsteelblue
+}
+.listItems li.selected{
+    background-color: lightgray;
+}
+
+.searchBar{
+    min-height: 2.7rem;
+    font-size: large;
+    border : none;
+    border-radius: 5px ;
+    outline: none;
+    background: transparent;
+}
